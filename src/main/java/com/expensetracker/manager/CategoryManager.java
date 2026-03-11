@@ -59,11 +59,13 @@ return category;
     public Category findById(int id) { 
         if (id <= 0) {
             System.out.println("Invalid category ID, please try again.");
-            return null;
+            return null;    
+        }
+        else {
+            return categories.stream().filter(c -> c.getId() == id).findFirst().orElse(null);
         }
         
         
-        
-        return null; }
-    public Category findByName(String name) { return null; }
+     }
+    public Category findByName(String name) { return categories.stream().filter(c -> c.getName().equals(name)).findFirst().orElse(null); }
 }

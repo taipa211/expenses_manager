@@ -25,6 +25,7 @@ public class CategoryManager {
     public CategoryManager() {
 this.categories= new ArrayList<>();
 this.nextId=1;
+this.expense
 // Inicializar com categorias predefinidas
 add("Food");
 add("Transport");

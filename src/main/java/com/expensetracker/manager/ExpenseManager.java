@@ -79,7 +79,7 @@ LocalDate date = LocalDate.now();
 
     }
 
-    private Expense findById(int id) { 
+    public Expense findById(int id) { 
         int i=0;
         if (id<=0) {
             System.out.println("Invalid expense ID, please try again.");
